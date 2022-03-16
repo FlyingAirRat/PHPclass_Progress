@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Form</h1>
+    <form action="/join">
+        <div class=""><input type="text" name="iuser" value="1" readonly></div>
+        <div class=""><input type="text" name="uid" placeholder="user ID" autofocus required></div>
+        <div class=""><input type="password" name="upw" placeholder="user Password" required></div>
+        <div class=""><label>프사:</label><input type="file"></div>
+        <div class=""><label>남긴 말: </label><textarea placeholder="bbbb"></textarea></div>
+        <div class=""><label>지역: </label>
+            <select>
+                <li>
+                    <option>서울</option>
+                    <option>부산</option>
+                    <option>대전</option>
+                    <option selected>대구</option>
+                    <option>광주</option>
+                </li>
+            </select>
+            <select multiple>
+                <li>
+                    <option>서울</option>
+                    <option>부산</option>
+                    <option>대전</option>
+                    <option selected>대구</option>
+                    <option>광주</option>
+                </li>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
