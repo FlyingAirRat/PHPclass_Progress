@@ -1,0 +1,5 @@
+
+ul {list-style-type: none; border-style:dashed; border-color:black}
+li {line-height: 200%;}
+span {color: #ad3000; font-weight:1000}
+.container {width:700px; padding:10px; border:1px solid #ccc;}
