@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>My Form</h1>
-    <form action="/join">
+    <form action="/join" method="post">
         <div class=""><input type="text" name="iuser" value="1" readonly></div>
         <div class=""><input type="text" name="uid" placeholder="user ID" autofocus required></div>
         <div class=""><input type="password" name="upw" placeholder="user Password" required></div>
@@ -36,14 +36,19 @@
         </div>
         <div>
             <label>취미:</label>
-            <input type="checkbox" name="hobby" value="soccer" checked>축구</div>
-            <input type="checkbox" name="hobby" value="basketball">농구</div>
-            <input type="checkbox" name="hobby" value="baseball">야구</div>
-            <input type="checkbox" name="hobby" value="hockey">하키</div>
+            <input type="checkbox" name="hobby" value="soccer" checked>축구
+            <input type="checkbox" name="hobby" value="basketball">농구
+            <input type="checkbox" name="hobby" value="baseball">야구
+            <input type="checkbox" name="hobby" value="hockey">하키
         </div>
         <div>
             <label>성별</label>
-            <input type="radio" name=""
+            <input type="radio" name="gender" value="men" checked>남자
+            <input type="radio" name="gender" value="women">여자
+        </div>
+        <div>
+            <button type="submit">전송</button>
+            <button type="reset">초기화</button>
         </div>
         </form>
 </body>
