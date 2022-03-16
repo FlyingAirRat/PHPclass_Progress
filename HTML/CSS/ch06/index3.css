@@ -1,4 +1,6 @@
 #id1{ background-color: antiquewhite; color:brown; }
-.cls1{color:pink}
+.cls1, #id1{color:pink}
 div{color:red}
 div{color:blue}
+/* *{padding:0; margin: 0;} */
+/* 요즘 디자이너들은 다들 이렇게 써놓고 시작한다나. */
