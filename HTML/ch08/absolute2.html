@@ -14,6 +14,13 @@
             position:relative;
             /* relative를 빠뜨려서 absolute 먹인 h1가 밖으로 삐져나왔었다.
             삽질 오지고. */
+            /* static은 문서 생성 시 자동으로 놓이는 위치에 놓이는거고
+             relative는 static에서 지정된 좌표 기준으로 left 몇픽셀, top 몇픽셀 움직이는거고
+            fixed는 웹 브라우저 화면 상에서의 좌표 기준이고
+            absolute는 자기 부모, (상위 요소 중 relative인 부모를 찾지 못한다면 body) 위치 기준으로 left 몇픽셀, top 몇픽셀 이동한다는 식으로 이해했는데
+            제가 제대로 이해한 게 맞나요?
+            선생님 왈, "맞다." */
+
         }
         h1{
             position:absolute;
@@ -21,7 +28,7 @@
             bottom: 100px;
             color:white;
             margin:0 auto;
-            font-size: 120px;
+            font-size: 50px;
         }
     </style>
 </head>
