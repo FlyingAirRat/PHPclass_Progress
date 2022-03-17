@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #background{
+            width: 500px;
+            height: 300px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Hong_Kong_Night_view.jpg/1024px-Hong_Kong_Night_view.jpg') no-repeat;
+            background-size: cover;
+            position:relative;
+            /* relative를 빠뜨려서 absolute 먹인 h1가 밖으로 삐져나왔었다.
+            삽질 오지고. */
+        }
+        h1{
+            position:absolute;
+            right: 100px;
+            bottom: 100px;
+            color:white;
+            margin:0 auto;
+            font-size: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div id="background">
+        <h1>CSS3</h1>
+    </div>
+</body>
+</html>
