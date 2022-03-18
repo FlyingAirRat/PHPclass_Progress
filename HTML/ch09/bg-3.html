@@ -5,6 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      body{
+        background: url(images/bg2.png) no-repeat right top fixed;
+      }
+      div{
+        border: 10px solid #cccccc80;
+        margin-bottom: 10px;
+        background: url('images/bg3.png') no-repeat right top;
+        padding: 10px;
+      }
+      #bg1{
+        background-origin: padding-box;
+      }
+      /* 아무것도 안 써놓으면 background-origin은 패딩이다. */
+      #bg2{
+        background-origin: content-box;
+      }
+      #bg3{
+        background-origin: border-box;
+      }
+    </style>
 </head>
 <body>
     <div id="bg1">
