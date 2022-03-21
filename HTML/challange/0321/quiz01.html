@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        input:checked + span{
+            color:red;
+        }
+        /* label 자체를 바꾸긴 힘들다. span을 바꿔버리자. */
+    </style>
 </head>
 <body>
     <ul>
         <li>
-            <label for="basic"><input type="radio" name="room" id="basic" checked>기본형(최대 2인)</label>
+            <label for="basic"><span>기본형(최대 2인)</span><input type="radio" name="room" id="basic" checked></label>
         </li>
         <li>
-            
-            <label for="family"><input type="radio" name="room" id="family">가족형(최대 8인)</label>
+            <label for="family"><input type="radio" name="room" id="family"><span>가족형(최대 8인)</span></label>
         </li>
     </ul>
 </body>
