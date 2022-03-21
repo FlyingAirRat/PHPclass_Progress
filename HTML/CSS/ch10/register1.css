@@ -10,3 +10,6 @@ input{
 ul > li:not(:last-child){
     margin-bottom: 5px;
 }
+ul > li:not(:first-child){
+    margin-top: 5px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [class ~= 'button']{
+            color: red;
+            /* 클래스에 버튼 포함시 빨간칠. */
+        }
+        div[class ~= 'button']{
+            color: blue;
+            /* div임과 동시에 클래스에 버튼을 포함시 파란칠. */
+        }
+        .color_yellow{
+            color: yellow;
+            /* 이런식으로 클래스명과 적용할 속성을 같게 해버리는 방법도 있다. */
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" class="flat">메뉴1</a></li>
+        <li><a href="#" class="flat">메뉴2</a></li>
+        <li><a href="#" class="button">메뉴3</a></li>
+        <li><a href="#" class="flat button">메뉴4</a></li>
+    </ul>
+    <div class="button">메뉴5</div>
+    <div class="color_yellow">메뉴6</div>
+</body>
+</html>
