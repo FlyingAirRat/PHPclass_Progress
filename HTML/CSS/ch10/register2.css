@@ -1,0 +1,17 @@
+
+input[id = 'tel']{
+    border: 1px solid black;
+}
+input{
+    line-height: 14px;
+    /* 14픽셀 이상 안주면 한글 적을 때 다른 요소가 흔들린다. */
+    border: 1px solid red;
+}
+input[id='level']{
+    border-style:none;
+}
+#signup label{
+    float: left;
+    width: 100px;
+    font-size: 14px;
+}
