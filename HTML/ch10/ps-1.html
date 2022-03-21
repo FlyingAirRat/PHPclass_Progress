@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        .contents{
+            height:500px;
+        }
+        #intro:target,
+        #room:target,
+        #reservation:target{
+            background-color: #0069e0;
+            color: white;
+        }
+        /* 타겟팅 되는 순간 색이 바뀜. */
+        input:enabled{
+            background-color: #123123;
+        }
+        input:disabled{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navi">
+        <ul>
+            <li><a href="#intro">이용 안내</a></li>
+            <li><a href="#room">객실 소개</a></li>
+            <li><a href="#reservation">예약 방법 및 요금</a></li>
+            <li><a href="ps-2.html">예약하기</a></li>
+        </ul>
+    </nav>
+    <div id="intro" class="contents">
+        <h2>이용 안내</h2>
+    </div>
+    <div id="room" class="contents">
+        <h2>객실 소개</h2>
+    </div>
+    <div id="reservation" class="contents">
+        <h2>예약 방법 및 요금</h2>
+    </div>
+</body>
+</html>

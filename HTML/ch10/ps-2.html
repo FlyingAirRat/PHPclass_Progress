@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type='radio']:checked + label{
+            background-color: aqua;
+        }
+        input[type='checkbox']:checked + label{
+            background-color: rgb(160,68,184);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <input type="radio" name="room" id="basic" checked>
+            <label for="basic">기본형(최대 2인)</label>
+        </li>
+        <li>
+            <input type="radio" name="room" id="family">
+            <label for="family">가족형(최대 8인)</label>
+        </li>
+        <li>
+            <input type="checkbox" name="habbit" id="h1">
+            <label for="h1">축구</label>
+        </li>
+    </ul>
+</body>
+</html>
