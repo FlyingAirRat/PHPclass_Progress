@@ -7,19 +7,22 @@
     html{
       scroll-behavior: smooth;
     }
-    img {
+    /* img {
       margin-right:50px;
       border:1px solid #ccc;
       box-shadow: 2px 2px 5px #ccc;
+    } */
+    div[id ^='sec']:target img{
+      width:400px;
     }
     /* img:first-child{
       border: 2px solid red;
     } */
-    #sec1:target img,
+    /* #sec1:target img,
     #sec2:target img,
     #sec3:target img{
       width: 400px;
-    }
+    } */
   </style>
 </head>
 <body>
@@ -28,8 +31,8 @@
     <li><a href="#sec2">섹션2</a></li>
     <li><a href="#sec3">섹션3</a></li>
   </ul>
-  <div id="sec1"><img src="images/1.jpg" alt=""></div>
-  <div id="sec2"><img src="images/2.jpg" alt=""></div>
-  <div id="sec3"><img src="images/3.jpg" alt=""></div>
+  <div id="sec1"><h1>sec1</h1><img src="images/1.jpg" alt=""></div>
+  <div id="sec2"><h1>sec2</h1><img src="images/2.jpg" alt=""></div>
+  <div id="sec3"><h1>sec3</h1><img src="images/3.jpg" alt=""></div>
 </body>
 </html>
