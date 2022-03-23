@@ -20,3 +20,10 @@ body {
 img {
   max-width:100%;
 }
+/* 캬... .wrapper가 아니라 #wrapper였다.
+이런 실수는 많이 하지 말자구. */
+#wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  grid-gap: 1rem;
+}

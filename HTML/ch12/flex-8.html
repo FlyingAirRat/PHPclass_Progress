@@ -6,67 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p { margin: 0; padding: 0; }
-        .container {     
-            display: flex;       
-            background-color: aliceblue; 
-            border: 1px solid #111;             
-            margin-bottom: 10px;
-            height: 100px;
-        }
-        .box {   
-                      
-            display: flex;
-            justify-content: center;
-            align-items: center;           
-            background-color: #111; color: #fff; margin: 2px; 
-        }        
-        #opt1 div.box { flex-basis: auto; }
-
-        #opt2 div.box { flex-basis: 15%; }  
-        #opt2 div.box:nth-child(2) { flex-grow: 1; }
-        #opt2 div.box:nth-child(3) { flex-basis: 0; flex-grow: 1; flex-shrink: 0; }
-        
-
-        #opt3 div.box { flex-basis: content; }
-        
-
-        #opt4 div.box { flex-basis: 2rem; }
-      
-
-        
+        .container { display: flex; width: 400px; background-color: beige; }
+        .container div:nth-child(odd) { background-color: aquamarine; }
+        .container div:nth-child(even) { background-color: blueviolet; }
+        #box1 { flex-grow: 300; }
+        #box2 { width: 100px; }
+        #box3 { flex-grow: 500; }
     </style>
 </head>
 <body>
-    <div class="container" id="opt1">
-        <div class="box"><p>11111</p></div>
-        <div class="box"><p>2</p></div>
-        <div class="box"><p>33333</p></div>
-        <div class="box"><p>4</p></div>       
-    </div>
-    <div class="container" id="opt2">
-        <div class="box"><p>1</p></div>
-        <div class="box"><p>2</p></div>
-        <div class="box"><p>33333333333333</p></div>
-        <div class="box"><p>4</p></div>        
-    </div>
-    <div class="container" id="opt3">
-        <div class="box"><p>1</p></div>
-        <div class="box"><p>2</p></div>
-        <div class="box"><p>3</p></div>
-        <div class="box"><p>4</p></div>               
-    </div>
-    <div class="container" id="opt4">
-        <div class="box"><p>1</p></div>
-        <div class="box"><p>2</p></div>
-        <div class="box"><p>3</p></div>
-        <div class="box"><p>4</p></div>               
-    </div>
-    <div class="container" id="opt5">
-        <div class="box"><p>1</p></div>
-        <div class="box"><p>2</p></div>
-        <div class="box"><p>3</p></div>
-        <div class="box"><p>4</p></div>              
-    </div>    
+   <div class="container">
+       <div id="box1">1</div>
+       <div id="box2">2</div>
+       <div id="box3">3</div>
+   </div>
 </body>
 </html>
