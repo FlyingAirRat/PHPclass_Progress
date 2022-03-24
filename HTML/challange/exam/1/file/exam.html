@@ -24,26 +24,29 @@
             color: white;
             background-color: goldenrod;
         }
-        li a{
+        a{
             height: 50px;
             text-align: center;
             
             left: 50%;
             bottom: 10%;
-            border: 5px solid grey;
+            border: 1px solid grey;
             border-radius: 5px;
+            padding: 5px;
         }
         html{
             scroll-behavior: smooth;
         }
         footer{
             display: fixed;
+            position: bottom;
         }
         ul{
             list-style-type: none;
         }
         li figure img{
             border-radius: 20px 20px 0px 0px;
+            max-width: 400px;
         }
         figcaption h3{
             background-color: rgba(0,0,0,0.5);
@@ -58,7 +61,7 @@
         }
         li{
             position: relative;
-            display: flex;
+            display: inline-block;
             flex-direction: row;
             flex-wrap: wrap;
             margin-bottom: 50px;
@@ -66,6 +69,7 @@
             border: 1px solid grey;
             padding: 30px;
             border-radius: 10px;
+            width: 400px;
         }
         #breweries{
             display: flex;
@@ -76,8 +80,30 @@
         figure{
             position: relative;
             height: 50%;
+            margin: 0 auto;
         }
-
+        h1{
+            color: white;
+            position: absolute;
+            margin-top: 80px;
+        }
+        article p{
+            color: white;
+        }
+        article{
+            float: right;
+            width: 50%;
+            right: 0px;
+        }
+        .hero{
+            width: 100%;
+            height: 200px;
+            position: relative;
+        }
+        li p{
+            width: 100%;
+            height: 100px;
+        }
     </style>
 </head>
 
