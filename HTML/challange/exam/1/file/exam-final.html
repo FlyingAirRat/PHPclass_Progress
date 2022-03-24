@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        p,
+        a {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            background-color: goldenrod;
+        }
+        a{
+            height: 50px;
+            text-align: center;
+            
+            left: 50%;
+            bottom: 10%;
+            border: 1px solid grey;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+        }
+        footer{
+            display: fixed;
+            position: bottom;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li figure img{
+            border-radius: 20px 20px 0px 0px;
+            width: 100%;
+            height: 100%;
+        }
+        figcaption h3{
+            background-color: rgba(0,0,0,0.5);
+            position: absolute;
+            display: inline-block;
+            bottom: 0px;
+            width: 100%;
+            margin: 0 auto;
+            color: white;
+            padding-top: 15%;
+            padding-bottom: 15%;
+        }
+        li{
+            position: relative;
+            display: inline-block;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+            height: auto;
+            border: 1px solid grey;
+            padding: 20px;
+            border-radius: 10px;
+            width: 310px;
+        }
+        #breweries{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+       
+        
+        figure{
+            position: relative;
+            height: 50%;
+            margin: 0 auto;
+        }
+        h1{
+            color: white;
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 30px;
+            font-size: 50px;
+        }
+        article p{
+            color: white;
+            width: 100%;
+        }
+        article{
+            float: right;
+            width: 50%;
+            right: 0px;
+        }
+        .hero{
+            width: 100%;
+            height: 200px;
+            position: relative;
+        }
+        li p{
+            width: 100%;
+            height: 100px;
+        }
+        footer{
+            background-color: grey;
+            width: 100%;
+            height: 3em;
+            margin: 0 auto;
+            text-align: center;
+            color: white;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="hero" style="background: url('./img/img_1.jpg') center; background-size: cover;">
+            <h1>You thirsty?</h1>
+            <article>
+                <p>Explore local breweries with just one click and stirred by starlight across the centuries light years
+                    great turbulent clouds circumnavigated paroxysm of global death.</p>
+                <a href="#breweries">Browse Breweries</a>
+            </article>
+        </section>
+
+        <section class="breweries" id="breweries">
+            <ul>
+                <li>
+                    <figure>
+                        <!-- Photo by Quentin Dr on Unsplash -->
+                        <img src="img/item_1.jpg" alt="item_1.jpg">
+                        <figcaption>
+                            <h3>Billions upon billions</h3>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        Made in the interiors of collapsing stars star stuff harvesting star light venture billions upon
+                        billions Drake Equation brain is the seed of intelligence?
+                    </p>
+                    <a href="#">Visit Website</a>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/item_2.jpg" alt="item_2.jpg">
+                        <figcaption>
+                            <h3>Drake Equation</h3>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        Another world citizens of distant epochs from which we spring descended from astronomers Orion's
+                        sword shores of the cosmic ocean.
+                    </p>
+                    <a href="#">Visit Website</a>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/item_3.jpg" alt="item_3.jpg">
+                        <figcaption>
+                            <h3>Vast cosmic arena</h3>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        Galaxies the ash of stellar alchemy prime number science inconspicuous motes of rock and gas
+                        brain is the seed of intelligence.
+                    </p>
+                    <a href="#">Visit Website</a>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/item_4.jpg" alt="item_4.jpg">
+                        <figcaption>
+                            <h3>Wall Painting, VUOTO Project</h3>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        We can finally share our work made for Vuoto project in Altomonte, one of the most beautiful
+                        experiences of our life.
+                    </p>
+                    <a href="#">Visit Website</a>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/item_5.jpg" alt="item_5.jpg">
+                        <figcaption>
+                            <h3>The Peregrine Falcons</h3>
+                        </figcaption>
+                    </figure>
+                    <p>
+                        They are machines, alive and powerful.Their lines are inspired by those of the Urwerk watches:
+                        sharp and fluid. They are not specifically mechanical birds,
+                    </p>
+                    <a href="#">Visit Website</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2021. KOREA IT ACADEMY</p>
+    </footer>
+</body>
+
+</html>
