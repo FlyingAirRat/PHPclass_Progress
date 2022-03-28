@@ -1,0 +1,15 @@
+#signup label{
+    float:left;
+    font-size: 13px;
+    width: 110px;
+}
+input{
+    line-height: 14px;
+    /* 14픽셀 이상 안주면 한글 적을 때 다른 요소가 흔들린다. */
+}
+ul > li:not(:last-child){
+    margin-bottom: 5px;
+}
+ul > li:not(:first-child){
+    margin-top: 5px;
+}

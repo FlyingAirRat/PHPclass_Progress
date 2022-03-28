@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {margin:0;}
+        #box1 {background-color: #ffd800; float: left;}
+        #box2 {background-color: #0094ff; float: left;}
+        #box3 {background-color: #00ff21;}
+        /* clear는 해당 속성 포함, 다음부터 float의 영향을 받고 싶지 않으면 쓰자. */
+        /* 플로트를 쓰면, 플로트 끝나는 지점에 클리어 쓰자. */
+        /* 네비게이션 바 만들 때 쓰기 좋지 않을까? */
+        /* 물론 플렉스, 그리드 쓰는 게 낫다나. */
+        #box4 {background-color: #a874ff; clear: both;}
+    </style>
+</head>
+<body>
+    <p id="box1">박스1</p>
+    <p id="box2">박스2</p>
+    <p id="box3">박스3</p>
+    <p id="box4">박스4</p>
+</body>
+</html>

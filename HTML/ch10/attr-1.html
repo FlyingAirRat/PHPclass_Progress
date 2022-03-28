@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[target]{
+            color:aqua;
+        }
+        a[href="#3"]{
+            background-color: yellow;
+        }
+        /* 속성 있는 태그만 선택해 적용. 주로 input에서 많이 쓴다나. */
+        a[target][href]{
+            background-color: red;
+        }
+        input[type='text'][value='hello']{
+            background-color: #2ff;
+        }
+        /* 사전 설정된 값만 보고 먹이고 말고를 정함.
+        중간에 Hello를 지웠다고 해서 배경색이 사라지는 건 아님. */
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a target="_blank_">메인 메뉴 : </a></li>
+        <li><a href="#1">메인 1</a></li>
+        <li><a href="#2" target="_blank_">메인 2</a></li>
+        <li><a href="#3">메인 3</a></li>
+        <li><a href="#4">메인 4</a></li>
+        <li><input type="text" value="hello"></li>
+    </ul>
+</body>
+</html>

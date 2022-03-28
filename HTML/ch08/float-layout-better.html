@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+        }
+        #wrap {
+            width: 1200px;
+            background-color: antiquewhite;
+            margin: 20px auto;
+            /* 높이 지우고, 마진20픽셀 오토 줬다. */
+        }
+        header {
+            height: 120px;
+            background-color: aquamarine;
+        }
+        main{
+            height: 700px;
+        }
+        footer {
+            height: 100px;
+            background-color: red;
+            clear: both;
+        }
+        section{
+            float:left;
+            height:100px;
+        }
+        /* main:not(:first-child) */
+        section:first-child{
+            width: 250px; height:100%; background-color: gray;
+        }
+        section:nth-child(2){
+            width: 800px; height:100%; background-color: burlywood;
+        }
+        section:last-child{
+            width: 150px; height:100%; background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <main>
+            <section>사이드바</section>
+            <section>본문</section>
+            <section>사이드바2</section>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>

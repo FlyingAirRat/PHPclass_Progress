@@ -1,0 +1,59 @@
+html, body{
+    margin: 0;
+}
+.header{
+    background-color: hotpink;
+    float: left;
+    height: 100%;
+    width: 150px;
+    display: fixed;
+    position: absolute;
+}
+
+.header h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.top-bar, .main{
+    margin-left: 150px;
+}
+
+.wrap{
+    height: 100%;
+}
+.top-bar{
+    margin-left: 150px;
+    height: 4em;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    float: right;
+    border: 1px solid grey;
+}
+.profile__icon{
+    position: absolute;
+    float: right;
+    border-radius: 50%;
+    background-color: purple;
+    width: 2em;
+    height: 2em;
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+.profile{
+    position: block;
+    margin-right: 50px;
+    float: right;
+}
+.search{
+    width: 75%;
+    display: inline;
+}
+.search__form{
+    display: inline;
+    height: 3em;
+}
+.main__header{
+    width: 85%;
+}
